@@ -1,0 +1,75 @@
+p{
+    margin: 0 !important;
+}
+
+.box{
+
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+width: 100vw;
+background-color: #f3f2f2;;
+}
+
+.login{
+    text-align: center;
+    cursor: pointer;
+    padding: 5px;
+    margin-top: 20px;
+    width: 170px;
+    background-color: rgb(244, 241, 235);
+
+    &-icon{
+        margin-right: 10px;
+    }
+}
+
+.box_login{
+    
+    display: flex;
+    height: 450px;
+}
+.login_left{
+    width: 220px;
+    background-size: cover;
+    background-image: url("https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    position: relative;
+    &--icon{
+        position: absolute;
+        left: 15px;
+        top: 0;
+        font-size: 50px;
+        color: white;
+    }
+}
+.login_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    background-color: white;
+    &--content{
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 20px;
+       
+    }
+
+}
+
+.content_title{
+    font-size: 15px;
+}
+.content_img{
+    width: 255px;
+}
+.singup{
+    text-decoration: none;
+    color: black;
+}
+
+.login-text:hover{
+    color: #0d6efd;
+}

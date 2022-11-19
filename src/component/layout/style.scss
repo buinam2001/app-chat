@@ -1,0 +1,63 @@
+@import "./user/user.scss";
+@import "./roomchat/roomchat.scss";
+@import "./chatview/chatview.scss";
+
+
+
+
+@media only screen and (max-width: 992px) {
+   
+  
+    .chat-back{
+     
+        display: block;
+        margin-right: 0;
+    }
+    .chat-img{
+        display: none;
+    }
+
+    .model-box{
+        left: 0;
+        width: 100%;
+    }
+
+    .displayblock{
+        display: block;
+    }
+    .displaynone{
+        display: none;
+    }
+
+
+  }
+
+
+
+  //587
+
+  @media only screen and (max-width: 587px) {
+    
+    .login_left{
+        width: 280px;
+        height: 150px;
+        background-position: center center;
+        background-size: cover;
+        background-image: url(https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+        position: relative;
+    }
+    .login_right{
+        width: 280px;
+    }
+
+    .wapper_login{
+      flex-direction: column;
+     }
+     .login_right{
+       padding-bottom: 20px;
+     }
+
+
+  }
+
+   

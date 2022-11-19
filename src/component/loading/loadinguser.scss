@@ -1,0 +1,45 @@
+.model-list_load{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    animation: onload 0.7s inherit;
+}
+
+.item-avt_load{
+    width: 30px;
+    height: 30px;
+    background-color: #8e9498;
+    border-radius: 50%;
+   
+  
+}
+.item-name_load{
+    margin-left: 25px;
+    width: 70px;
+    height: 10px;
+    background-color: #8e9498;
+}
+.btn-add_load{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #8e9498;
+    margin-left: auto;
+}
+
+
+@keyframes onload {
+
+ 
+    
+    to{
+        
+        opacity: 0.4;
+
+    }
+
+}
+.model-load{
+
+    animation: onload 0.7s infinite;
+}

@@ -1,0 +1,297 @@
+.chat{
+    padding-top: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+    &-back{
+        margin-right: 20px;
+        font-size: 30px;
+      
+    }
+
+    &-text{
+        margin-left: 10px;
+    }
+
+
+    &-box{
+        display: flex;
+        align-items: center;
+    }
+    &-box img{
+        width: 60px;
+        border-radius: 50%;
+
+    }
+
+  
+    &-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        // height: 5vh;
+    }
+
+    &-main{
+        margin-top: 20px;
+        height: 450px;
+        height:80vh;
+        background-color: #8e9498;
+        padding-left: 20px;
+        padding-right: 20px;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+    }
+
+
+    .main-body{
+
+        margin-top: auto;
+       
+    }
+
+
+ /* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(167, 164, 164); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #807575; 
+  }
+
+
+
+}
+
+.box-member{
+    display: flex;
+   
+}
+.icon-member{
+    margin-left: 10px;
+    cursor: pointer;
+   
+}
+.chat-add{
+    font-size: 25px;
+    display: flex;
+}
+.icon-add{
+    margin-right: 20px;
+}
+
+
+.main-text{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+   
+
+    & img{
+        width: 50px;
+        border-radius: 50%;
+    }
+}
+
+.main-box{
+    margin-left: 20px;
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+    overflow-wrap: anywhere;
+}
+.box-user{
+    font-size: 13px;
+    color: #5c6469;
+}
+
+.chat-bottom{
+  & input{
+    border: none;
+    width: 80%;
+    font-size: 16px;
+  }
+
+  & input:focus {
+    outline: none;
+  }
+    
+}
+
+
+
+.chat-bottom{
+    
+   padding: 11px;
+   border: 1px solid rgb(226, 219, 218);
+}
+
+.bottom-box{
+display: flex;
+justify-content: space-between;
+
+}
+.box-icon{
+    display: flex;
+
+  
+}
+.icon-upfile{
+    margin-left: 20px;
+    font-size: 25px;
+    position: relative;
+}
+.upfile-dispalay{
+    right: 0;
+    bottom: 53px;
+    position: absolute;
+}
+
+.icon-send{
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+
+
+#model-1{
+
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color:black ;
+        opacity: 0.4;
+    
+    
+    }
+
+.model-list{
+    width: 100%;
+    height: 300px;
+    overflow-y: auto;
+    margin-top: 30px;
+    padding: 10px !important;
+    &_item{
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        margin-top: 10px;
+        
+    }
+}
+
+.item-avt{
+    width: 30px;
+    border-radius: 50%;
+    display: block;
+}
+.model-list_item:hover{
+    background-color: #e5e5e5;
+}
+.item-name{
+   margin-left: 20px;
+}
+.btn-add{
+    margin-left: auto;
+}
+
+.add{
+
+    color: blue;
+}
+
+.result{
+
+   text-align: center;
+}
+
+.disview{
+    position: relative;
+}
+
+
+//siler
+.chat_slider{
+    // position: absolute;
+    // left: 50%;
+    // top: 50%;
+    // transform: translate(-50%,-50%);
+    transition: all 0.3s;
+}
+
+.slider_center{
+    display: flex;
+   
+}
+
+
+
+.slider_img{
+    width: 380px;
+}
+
+.chat-back{
+    display: none;
+}
+
+.header_title{
+    text-align: center;
+    font-size: 22px;
+    margin-top: 10px;
+}
+.header_text{
+    margin-top: 20px;
+    margin: 0 auto;
+    font-size: 14px;
+    width: 380px;
+    text-align: center;
+}
+.chat_slider{
+    display: flex;
+}
+.slider_wapper{
+    width: 380px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.slider_back{
+    font-size: 35px;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    cursor: pointer;
+}
+.slider_next{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    font-size: 43px;
+    cursor: pointer;
+   
+}

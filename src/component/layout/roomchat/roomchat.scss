@@ -1,0 +1,181 @@
+.boder{
+
+    border-right: 1px solid rgb(225, 220, 220);
+}
+.room{
+   
+   cursor: pointer;
+  
+   &_wapper{
+    height: 86vh;
+    overflow: auto;
+
+   }
+
+    &-chat{
+        display: flex;
+        align-items: center;
+        padding: 10px;
+    
+    }
+    
+    &-img{
+        
+        & img {
+            width: 50px;
+            border-radius: 50%;
+        }
+    }
+
+    &-name{
+        padding-left: 20px;
+    }
+    &-header{
+      
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     
+
+      
+    }
+
+}
+
+.room-header_search{
+
+    display: flex;
+    align-items: center;  
+    display: inline-block;
+    padding: 0 10px; 
+    border-radius: 20px;
+    background-color: #e1e4ea;
+    
+
+    & span {
+        font-size: 19px;
+        color: #8792a7;
+    }
+    & input{
+        width: 83%;
+        border: none;
+        background-color: #e1e4ea;
+        font-size: 16px;
+    }
+    & input:focus{
+        outline: none;
+    }
+  
+}
+
+.room-header_add{
+
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+
+
+.model{
+
+display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:black;
+    opacity: 0.4;
+    z-index: 1;
+
+
+}
+
+.model-box{
+   
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+    width: 40%;
+    height: 90vh;   
+    position: fixed;
+    top: 5%;
+    left: 30%;
+    transform: scale(0);
+    transition: 0.4s all;
+    z-index: 2;
+
+
+  
+
+    &_add{
+       background-color: rgb(244, 242, 242);
+       margin: 25px auto;
+       width: 100%;
+       padding: 10px;
+       border: none;
+       border-bottom: 3px solid rgb(107, 112, 115);
+    }
+
+    &_add:focus
+    {
+     outline: none;
+     border-bottom: 3px solid rgb(54, 128, 193);
+    }
+    &_btn{
+        margin-top: auto;
+        margin-left: auto
+    }
+
+
+}
+
+
+
+
+.model-box_title{
+    display: flex;
+    justify-content: space-between;
+   
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+
+.btn-exit{
+    margin: 10px;
+}
+.btn-create{
+    margin: 10px;
+}
+
+.room-name-user{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 125px;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(167, 164, 164); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #807575; 
+  }

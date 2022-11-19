@@ -1,0 +1,44 @@
+.room-main_load{
+    animation: onload 0.9s infinite;
+}
+
+
+.room-img_load{
+    width: 50px;
+    height: 50px;
+    background-color: #8792a7;
+    border-radius: 50%;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .2), 0 1px 8px 0 rgba(0, 0, 0, .12);
+   
+    
+}
+.room-name-load{
+
+    width: 70px;
+    height: 10px;
+    background-color: #8792a7;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .2), 0 1px 8px 0 rgba(0, 0, 0, .12);
+   
+
+}
+.room-user-load{
+    margin-top: 8px;
+    width: 110px;
+    height: 10px;
+    background-color: #8792a7;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .2), 0 1px 8px 0 rgba(0, 0, 0, .12);
+  
+}
+
+
+@keyframes onload {
+
+ 
+    
+    to{
+        
+        opacity: 0.4;
+
+    }
+
+}
