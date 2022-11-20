@@ -8,7 +8,7 @@ import { AiOutlineClose } from 'react-icons/ai';
 import { grcontext } from '../../context/roomcontext';
 import { serverTimestamp } from "firebase/firestore";
 import Loadroom from '../../loading/loadingroom';
-import useFirestoremess from '../../../hooks/usefirestoremess';
+// import useFirestoremess from '../../../hooks/usefirestoremess';
 import { random } from '../../../random';
 
 function Roomchat({handledisplay}) {
@@ -64,8 +64,8 @@ function Roomchat({handledisplay}) {
     }
 
     
-    const mess = useFirestoremess('message');
-    const index = mess && mess.length - 1;
+    // const mess = useFirestoremess('message');
+    // const index = mess && mess.length - 1;
   
     
    

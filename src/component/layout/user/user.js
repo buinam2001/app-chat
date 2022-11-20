@@ -18,8 +18,6 @@ function User() {
         <div className="container">
         <div className="sidebar">
             <div className="sidebar-avt">
-              {/* <img src="https://lh3.googleusercontent.com/a/AItbvmm1Hw5SAYbLPRuKcaSuHS44zYLgVX1C9SEC-0se=s96-c" alt="avt" />    */}
-
                   <img src={data ? data.photoURL : null} alt="avt" />   
             </div>
 

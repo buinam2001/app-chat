@@ -16,7 +16,8 @@ function Roomcontext({children})
                     name:'member',
                     operator:'array-contains',
                     value: auth.uid
-                }},[auth.uid]);  
+                }},[auth.uid]); 
+                 
             const room = useFirestore('room',data);    
             const handleroomfind = (room) =>
             {

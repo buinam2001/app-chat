@@ -7,33 +7,28 @@ function Layout() {
 
     const [chatdisplay, setchatdisplay] = useState(false);
 
-   const handledisplay = () =>{
+  const handledisplay = () =>{
 
     setchatdisplay(true);
 
 
-   }
-   
+  } 
   const handledisplaychat = () => {
 
     setchatdisplay(false);
 
 
   }
-
   const classroom = () => {
     let classes = "col-10 col-lg-3 boder";
     classes += (chatdisplay) ? " displaynone" : " displayblock";
     return classes;
   }
-
-
-
-   const classview = () =>{
+  const classview = () =>{
     let classes = "col-10 col-lg-8 disview"; 
     classes += (chatdisplay) ? " displayblock" : " displaynone";
     return classes;
-   }
+  }
 
     return ( 
         <div className="wapper">     
@@ -44,8 +39,8 @@ function Layout() {
                     <div className={classroom()}> 
                       <Roomchat handledisplay={handledisplay}></Roomchat>  
                     </div>
-                    <div className={classview()}  >
-                        <Chatview handledisplaychat={handledisplaychat}  ></Chatview>    
+                    <div className={classview()}>
+                        <Chatview handledisplaychat={handledisplaychat}></Chatview>    
                     </div>
          </div>   
      </div>

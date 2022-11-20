@@ -21,20 +21,7 @@ const useFirestore = (collecname, condition ) => {
     }
 
 
-    
-
-  //   {
-  //     name:'keywords',
-  //     operator:'in',
-  //     value:valuemember
-      
-  // }
-  // ,orderBy("createdAt")
-
-  // where( condition.name, condition.operator, condition.value)
-  //where( condition.name, condition.operator, condition.value)
-  //orderBy("displayName")
-  //,where("uid","==","LtZRy1WuNgRimatlaQpY8TgYR4v2")
+  
     const q = query(collection(db, collecname), where( condition.name, condition.operator, condition.value));
 
     const unsubscribe = onSnapshot(q, (querySnapshot) => {
